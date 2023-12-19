@@ -8,7 +8,7 @@
 
 html
 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 *, ::before, ::after
  {
@@ -229,6 +229,7 @@ html
 
  .contact_icons
  {
+    font-weight: bold;
     padding: 55px;
     display: flex;
     justify-content: center;
@@ -254,6 +255,7 @@ html
 
  .footer
  {
+    text-align: right;
     width: 100vw;
     height: 10vh;
     background-color: var(--main-color2);
@@ -263,7 +265,6 @@ html
  .fa:hover
  {
     cursor: pointer;
-    animation: 0.5s ease-in forwards socials;
  }
 
  @keyframes socials {
@@ -275,4 +276,55 @@ html
     {
         top: 7px;
     }
+    
+    
  }
+
+ @keyframes socialsphone {
+    0%
+    {
+     left: 0px;
+    }
+    100%
+    {
+        left: 7px;
+    }
+}
+
+ .sign
+{
+    font-size: 10px;
+    margin-right: 40px;
+    margin-top: 5vh;
+}
+
+@media (max-width: 400px)
+{
+    .projects
+    {
+        height: 400vh;
+    }
+    .projectlist
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_icons
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact
+    {
+     height: 110vh;
+    }
+
+
+}
+
+@media (min-width: 400px)
+{
+    .fa:hover {
+    animation: 0.5s ease-in forwards socials;}
+}
