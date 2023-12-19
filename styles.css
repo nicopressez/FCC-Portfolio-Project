@@ -2,6 +2,7 @@
 {
     --main-color1: #04080e;
     --main-color2: #303c58;
+    --main-color3: #b9f373;
 }
 
 html
@@ -59,8 +60,83 @@ html
 
  .subintro
  {
-    color: #b9f373;
+    color: var(--main-color3);
     margin-top: 7px;
     font-style: italic;
  }
 
+ .projects
+ {
+  background-color: var(--main-color3);
+  width: 100vw;
+  height: 100vh;
+ }
+
+ .projectlist
+ {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-column: repeat(5,1fr);
+ }
+ .projects img
+ {
+    object-fit: cover;
+    border-radius: 5% 5% 0% 0%;
+  height: 80%;
+  width: 100%;
+ }
+
+ .project{
+    border-radius: 5%;
+    margin-top: 10px;
+    background-color: var(--main-color1);
+    text-align: center;
+    width: 190px;
+    height: 210px;
+    
+ }
+
+
+
+ .project:first-of-type
+ {
+    grid-row: 1;
+    grid-column: 2;
+ }
+
+ .project:nth-of-type(2)
+ {
+    grid-row: 1;
+    grid-column: 3;
+ }
+
+ .project:nth-of-type(3)
+ {
+    grid-column: 4;
+    grid-row: 1;
+ }
+ .project:nth-of-type(4)
+ {
+    grid-column: 2;
+    grid-row: 2;
+ }
+ .project:nth-of-type(5)
+ {
+    grid-column: 3;
+    grid-row: 2;
+ }
+ .project:nth-of-type(6)
+ { 
+    grid-column: 4;
+    grid-row: 2;
+ }
+
+ legend
+ {
+    color: white;
+ }
+
+ a
+ {
+    text-decoration: none;
+ }
