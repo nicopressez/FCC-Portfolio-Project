@@ -217,3 +217,62 @@ html
         opacity: 1;
     }
  }
+
+ .contact
+ {
+    text-align: center;
+    background-color: var(--main-color2);
+    width: 100vw;
+    height: 90vh;
+    color: white;
+ }
+
+ .contact_icons
+ {
+    padding: 55px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .contact_title
+ {
+    padding-top: 30vh;
+ }
+
+ .subcontact
+ {
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 7px;
+ }
+
+ .fa
+ {
+ margin-left: 20px;
+ position: relative;
+ }
+
+ .footer
+ {
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--main-color2);
+    border-top: 2px solid var(--main-color1);
+ }
+
+ .fa:hover
+ {
+    cursor: pointer;
+    animation: 0.5s ease-in forwards socials;
+ }
+
+ @keyframes socials {
+    0%
+    {
+     top: 0px;
+    }
+    100%
+    {
+        top: 7px;
+    }
+ }
