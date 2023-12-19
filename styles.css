@@ -3,6 +3,7 @@
     --main-color1: #04080e;
     --main-color2: #303c58;
     --main-color3: #b9f373;
+    --anim-color1: red;
 }
 
 html
@@ -180,7 +181,17 @@ html
  button:hover
  {
     cursor: pointer;
-    animation:1s linear forwards buttonanim ;
+    animation:0.5s linear forwards buttonanim ;
+ }
+
+.code
+{
+    opacity: 0;
+    color: var(--anim-color1);
+}
+
+.project:hover .code{
+    animation: 0.5s linear forwards codetext;
  }
 
  @keyframes buttonanim {
@@ -197,5 +208,12 @@ html
  }
 
  @keyframes codetext {
-    
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
  }
