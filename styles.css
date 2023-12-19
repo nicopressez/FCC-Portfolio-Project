@@ -1,0 +1,66 @@
+:root
+{
+    --main-color1: #04080e;
+    --main-color2: #303c58;
+}
+
+html
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+*, ::before, ::after
+ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ header
+ {
+    position: fixed;
+    width: 100%;
+ }
+ navbar
+ {
+    display: flex;
+    justify-content: end;
+    background-color: var(--main-color1);
+ }
+
+ .navlink
+ {
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+ }
+
+ .navlink:last-of-type
+ {
+    padding-right: 20px;
+ }
+
+ .intro
+ {
+    color:white;
+    background-color: var(--main-color2);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 35vh;
+    padding-bottom: 55vh;
+ }
+ .name
+ {
+
+ }
+
+ .subintro
+ {
+    color: #b9f373;
+    margin-top: 7px;
+    font-style: italic;
+ }
+
